@@ -119,6 +119,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 35px;
 }
 
 .card{
@@ -131,16 +132,31 @@ body{
     padding: 10px 10px
 }
 
+.card_titulo{
+    font-weight: 800;
+    transition-duration: 0.75s;
+}
+
 .card:hover{
     background-color: var(--corTomVerde);
     color: var(--corTomAzul);
     transform: scale(1.075);
     z-index: 2;
+    color: var(--corDeFundo);
 }
 
-.card_titulo{
-    font-weight: 800;
+.card_descricao{
+    transition-duration: 0.75s;
 }
+
+.card:hover .card_descricao{
+    color: var(--corDeFundo);
+}
+
+.card:hover .card_titulo{
+    color: var(--corDeFundo);
+}
+
 
 .card_imagem{
     height: 200px;
@@ -151,7 +167,7 @@ body{
     width: 100%;
     height: 200px;
     background-color: var(--corTomVerde);
-    margin-top: 35px;
+
 }
 
 .rodape * {
