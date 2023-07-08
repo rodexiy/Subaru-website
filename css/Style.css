@@ -32,9 +32,11 @@ body{
     height: 80px;
 }
 
-.navLogo img{
-    margin-left: 5px;
+.navLogo h2{
+    font-size: 2rem;
+    margin-left: 20px;
     width: 150px;
+    color: var(--corDeFundo);
 }
 
 .navLinks{
@@ -67,7 +69,7 @@ body{
 }
 
 .imagemEmpresa img{
-    width: 65%;
+    width: 40%;
 }
 
 .tituloEDescricao{
@@ -127,7 +129,7 @@ body{
     flex-direction: column;
     background-color: var(--corTomAzul);
     width: 30%;
-    height: 30%;
+    height: auto;
     transition-duration: 0.75s;
     padding: 10px 10px
 }
@@ -135,6 +137,8 @@ body{
 .card_titulo{
     font-weight: 800;
     transition-duration: 0.75s;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .card:hover{
@@ -153,20 +157,22 @@ body{
     color: var(--corDeFundo);
 }
 
+
 .card:hover .card_titulo{
     color: var(--corDeFundo);
 }
 
 
-.card_imagem{
-    height: 200px;
-    object-fit: cover;
+.card_video{
+    height: auto;
 }
 
 .rodape{
     width: 100%;
     height: 200px;
     background-color: var(--corTomVerde);
+
+    margin-top: auto;
 
 }
 
@@ -179,19 +185,21 @@ body{
     color: var(--corDeFundo);
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 80%;
+    justify-content: space-around;
+    flex-direction: column;
+
+    width: 100%;
+    height: 200px;
 }
 
 .faleConosco_titulo{
-    font-size: 1.75rem;
+    font-size: 2rem;
     height: 5%;
-    padding-top: 15px;
-    padding-left: 15px;
+
 }
 
 .faleConosco_link{
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -200,7 +208,7 @@ body{
     justify-content: start;
     align-items: end;
     height: 5%;
-    padding-left: 20px;
+
 }
 
 
@@ -209,6 +217,7 @@ body{
     flex-direction: column;
     gap: 5px;
 }
+
 
 
 
@@ -234,52 +243,36 @@ body{
 .descricao_empresa{
     margin-top: 30px;
     width: 40%;
+    margin-bottom: 50px;
 }
 
-.lovePromise{
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
+.ToolsIUse{
+    margin-top: 5px;
+    margin-bottom: 50px;
 }
 
-.lovePromise_descricao{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+
+.aboutMe{
+    font-size: 1.2rem;
 }
 
-.lovePromise_descricao_descricao{
-    margin-top: 25px;
-    width: 50%;
+.toolsTitle{
+    font-size: 1.5rem;
 }
 
-.lovePromise_imagem{
-    width: 50%;
+.ToolsIUse li{
+    font-size: 1.2rem;
 }
 
-.anunciantes{
-    display: flex;
-    align-items: center;
+.vscode{
+    width: 75%;
+    margin-bottom: 50px;
 }
 
-.anunciantes_descricao{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.anunciantes_imagem{
-    width: 50%;
-}
 
-.anunciantes_descricao_descricao{
-    margin-top: 25px;
-    width: 50%;
-}
+
+
 @media (max-width: 768px) {
     .conteudo_a{
         flex-direction: column-reverse;
@@ -319,36 +312,6 @@ body{
         width: 80%;
     }
 
-    .lovePromise{
-        flex-direction: column;
-    }
-
-    .anunciantes{
-        flex-direction: column-reverse;
-    }
-
-    .anunciantes_imagem{
-        margin-top: 25px;
-        width: 100%;
-    }
-
-    .anunciantes_descricao{
-        margin-top: 25px;
-        width: 100%;
-    }
-
-    .lovePromise_imagem{
-        margin-top: 25px;
-        width: 100%;
-    }
-
-    .lovePromise_descricao{
-        
-        margin-top: 25px;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
 
 
 
